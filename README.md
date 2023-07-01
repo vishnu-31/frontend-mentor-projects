@@ -8,4 +8,4 @@ This repository contains my solutions to variuos frontend mentor challenges
 
 - Results Summary Component Live URL - [Click Here](https://vishnu-31.github.io/frontend-mentor-projects/results-summary-component-main/)
 
-- NFT Preview Card Component Live URL - [Click Here](https://github.com/vishnu-31/frontend-mentor-projects/tree/main/nft-preview-card-component-main)
+- NFT Preview Card Component Live URL - [Click Here](https://vishnu-31.github.io/frontend-mentor-projects/nft-preview-card-component-main/)
