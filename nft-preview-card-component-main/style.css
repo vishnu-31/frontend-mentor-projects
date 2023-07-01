@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Outfit";
+    background-color:  hsl(217, 54%, 11%);
+}
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+article{
+    color:hsl(215, 51%, 70%);
+    width: 300px;
+    background-color:  hsl(216, 50%, 16%);
+    padding: 1em;
+    border-radius: 15px;
+}
+
+p{
+    line-height: 1.5rem;
+}
+
+.product-img-container {
+    background: url("./images/image-equilibrium.jpg");
+    background-size: contain;
+    height:20em;
+    border-radius: 15px;
+    width: 100%;
+}
+.layer{
+    margin:0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.layer:hover{
+    background: url("./images/icon-view.svg") no-repeat center;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+h1, a.name{
+    color:white;
+    cursor: pointer;
+}
+
+h1:hover,a.name:hover{
+    color:hsl(178, 100%, 50%);
+}
+
+.icon{
+    margin-right:0.5em;
+}
+section.stats{
+    display: flex;
+    justify-content:space-between ;
+}
+a.price {
+    display: flex;
+    color: hsl(178, 100%, 50%);
+}
+
+a.time{
+    display: flex;
+}
+
+hr{
+    margin:5% auto;
+    height:0.05em;
+    background-color:hsl(215, 51%, 70%);
+    border:none;
+}
+
+.creator{
+    display: flex;
+    align-items: center;
+}
+
+
+.img-container  {
+    width:2em;
+    height:2em;
+    border-radius: 50%;
+    border: 0.1em solid white;
+    margin-right: 1em;
+}
+.img-container img{
+    width: 100%;
+}
