@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat";
+    font-weight: 500;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    border-radius: 20px;
+    background-color: white;
+    justify-content: center;
+    padding:0;
+}
+
+.product-img{
+    margin:0;
+    padding:0;
+    background-size: cover;
+    width:100%;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding:2em;
+}
+.product-cat{
+    margin-bottom: 0.5em;
+}
+
+.card-container p{
+    line-height: 1.5;
+    font-size: 200;
+}
+
+h1{
+    font-size: xx-large;
+    margin: 2% 0;
+}
+
+h1, .final-price{
+    font-family: "Fraunces", serif;
+}
+
+.price{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin:1em 0;
+}
+
+.final-price{
+    font-weight: 700;
+    font-size: xx-large;
+    color:hsl(158, 36%, 37%);
+    margin-right: 1em;
+}
+
+.strike-price{
+    text-decoration: line-through;
+}
+
+.low-opacity{
+    opacity:60%;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cart-btn{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 0.5em;
+    border:none;
+    width: 100%;
+    padding:1em;
+}
+
+.cart-btn img{
+    margin-right: 0.5em;
+}
+
+.cart-btn:hover{
+    background-color: hsl(158, 36%, 20%);
+}
+
+
+
+@media  screen and (max-width: 600px) {
+    main{
+        width:400px;
+    }
+    .product-img{
+        height:17em;
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        background: url("./images/image-product-mobile.jpg") no-repeat center;
+        background-size: cover;
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    main{
+        height: 475px;
+        flex-direction: row;
+        width: 650px;
+    }    
+    .product-img{
+        width:350px;
+        height:100%;
+        background: url("./images/image-product-desktop.jpg") no-repeat center ;
+        background-size: cover;
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+    }
+    h1{
+        padding:2% 10% 2% 0;
+    }
+    .card-container{
+        width:300px;
+        min-height:inherit;
+        padding: 5% 5% 5% 5%;
+
+    }
+
+}
