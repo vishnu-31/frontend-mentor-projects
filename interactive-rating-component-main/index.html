@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="main start-page active">
+      <section class="info">
+        <!-- Rating state start -->
+        <div class="star"><img src="./images/icon-star.svg" alt="star icon"></div>
+        <h1> How did we do?</h1>
+
+        <p> Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      </section>
+      <section class="rating">
+        <div id="score">
+          <div class="radio-input unchecked" onclick="onClick(this)"><input type="radio" name="score" value="1" id="num-1"><label for="num-1">1</label></div>
+          <div class="radio-input unchecked" onclick="onClick(this)"><input type="radio" name="score" value="2" id="num-2"><label for="num-2">2</label></div>
+          <div class="radio-input unchecked" onclick="onClick(this)"><input type="radio" name="score" value="3" id="num-3"><label for="num-3">3</label></div>
+          <div class="radio-input unchecked" onclick="onClick(this)"><input type="radio" name="score" value="4" id="num-4"><label for="num-4">4</label></div>
+          <div class="radio-input unchecked" onclick="onClick(this)"><input type="radio" name="score" value="5" id="num-5"><label for="num-5">5</label></div>
+        </div>
+        <section class="btn-container">
+          <button type="button" onclick="onSubmit()">SUBMIT</button>
+        </section>
+      </section>
+    </section>
+  <!-- Rating state end -->
+    <section class="main thank-you inactive">
+
+        <section class="img"><img src="./images/illustration-thank-you.svg" alt="illustration of thank you"></section>
+        <section class="bubble">You selected <span id="scored"></span> out of 5</section>
+
+        <h1> Thank you!</h1>
+      <p> We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vishnu M</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

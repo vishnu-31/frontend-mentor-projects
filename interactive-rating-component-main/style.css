@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;  
+    background-color: hsl(216, 12%, 8%);
+    
+    font-family: "Overpass", sans-serif;
+}
+
+main{
+    margin:auto auto;
+}
+
+.main{
+    background:hsl(214, 15%, 12%);
+    color: white;
+    padding:2.5em;
+    border-radius: 1em;
+    color:hsl(216, 12%, 54%);
+    margin:auto auto;
+}
+
+.inactive{
+    display: none;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+}
+
+.thank-you{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    color:white;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+p{
+    margin-top:1em;
+    font-weight: 400;
+}
+
+div.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 23%);
+    width:1em;
+    padding:1em;
+}
+.star img{
+    width: 100%;
+}
+
+
+div#score{
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    border-radius: 50%;
+    background-color:  hsl(213, 19%, 23%);
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+}
+
+.bubble{
+    margin:1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  hsl(213, 19%, 23%);
+    color: Orange;
+    border-radius: 1em;
+    padding: 0.5em 1em;
+}
+
+#scored{
+    margin: auto 0.5em;
+}
+
+.unchecked:hover{
+    background-color: hsl(216, 12%, 54%);
+    color:white;
+}
+.checked{
+    background-color: Orange;
+    color: white;
+}
+
+ .radio-input input{
+    width:100%;
+ }
+
+#score input{
+    display: none;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+}
+
+.btn-container button{
+    width: 100%;
+    color:white;
+    border-radius: 1.5em;
+    letter-spacing: 0.3em;
+    font-weight: 700;
+    padding:1em;
+    background-color: hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        width:20em;
+    }
+}
+@media screen and (min-width: 600px) {
+    .main{
+        width:22.5em;
+    }
+}
