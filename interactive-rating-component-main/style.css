@@ -130,6 +130,12 @@ div#score{
     font-weight: 700;
     padding:1em;
     background-color: hsl(25, 97%, 53%);
+    cursor:pointer;
+}
+
+button:hover{
+    color:orange;
+    background-color: white;
 }
 
 @media screen and (max-width: 600px) {
