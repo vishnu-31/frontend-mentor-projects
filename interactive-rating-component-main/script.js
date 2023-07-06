@@ -19,15 +19,19 @@ function onClick(element){
 }
 
 function onSubmit(){
-    let score = document.getElementById("scored");
-    score.textContent =" "+selectedValue+" ";
-    console.log(score.innerHTML);
-    let mainElement = document.getElementsByClassName("start-page")[0];
-    let thankYouElement = document.getElementsByClassName("thank-you")[0];
-    console.log(" main element before",mainElement)
-    console.log(" thank-you element before",thankYouElement)
-    mainElement.classList.remove("active");
-    mainElement.classList.add("inactive");
-    thankYouElement.classList.remove("inactive");
-    thankYouElement.classList.add("active");
+
+    if(selectedValue !== undefined){
+
+        let score = document.getElementById("scored");
+        score.textContent =" "+selectedValue+" ";
+        console.log(score.innerHTML);
+        let mainElement = document.getElementsByClassName("start-page")[0];
+        let thankYouElement = document.getElementsByClassName("thank-you")[0];
+        console.log(" main element before",mainElement)
+        console.log(" thank-you element before",thankYouElement)
+        mainElement.classList.remove("active");
+        mainElement.classList.add("inactive");
+        thankYouElement.classList.remove("inactive");
+        thankYouElement.classList.add("active");
+    }
 }
